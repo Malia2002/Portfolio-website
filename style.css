@@ -1,0 +1,270 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #00ff00;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 20px 50px;
+    background-color: #121212;
+    height: 100vh;
+    gap: 40px;  /* Add a gap between the text and image */
+}
+
+.hero-text {
+    width: 60%; /* Adjust the width of the text section */
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5em; /* Make the title smaller for better balance */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.cta-button {
+    background-color: #00ff00;
+    color: #121212;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #009900;
+}
+
+.hero-image {
+    width: 35%; /* Adjust the size of the profile image */
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 250px;  /* Increase the size to make the image larger */
+    height: 250px; /* Ensure it remains square */
+    object-fit: cover;  /* Ensures the image fills the circle */
+    border-radius: 50%;  /* Makes it circular */
+    border: 5px solid #fff;  /* Optional: adds a border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Optional: adds a shadow effect */
+}
+
+/* Make the image more responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .hero-text {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 200px;  /* Adjust size for smaller screens */
+        height: 200px; /* Maintain circular shape */
+    }
+}
+
+/* About Me Section */
+#about {
+    background-color: #1a1a1a;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    color: #ccc;
+}
+
+.about-text h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    border: 5px solid #fff;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #121212;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.project {
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.project p {
+    color: #bbb;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #1a1a1a;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#skills ul li {
+    margin: 0 20px;
+    font-size: 1.3em;
+}
+
+#skills ul li span {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00ff00;
+    color: #121212;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#skills ul li span:hover {
+    background-color: #009900;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #121212;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    color: #bbb;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text, .about-image {
+        flex: none;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    #skills ul {
+        flex-direction: column;
+    }
+}
